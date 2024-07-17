@@ -29,8 +29,6 @@ a {
     
     .logo {
         transition: transform 0.3s ease-in-out;
-    
-      
         &:hover {
           transform: scale(1.2);
           cursor: pointer;
@@ -78,6 +76,10 @@ p{
     .tiktok,
     .wpp,
     .yt {
-      @extend .logo;
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.2);
+          cursor: pointer;
+        }
     }
   }

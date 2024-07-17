@@ -30,22 +30,10 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.navbar .logo, .navbar footer .insta, footer .navbar .insta,
-.navbar footer .tiktok,
-footer .navbar .tiktok,
-.navbar footer .wpp,
-footer .navbar .wpp,
-.navbar footer .yt,
-footer .navbar .yt, .navbar .nav-item {
+.navbar .logo, .navbar .nav-item {
   transition: transform 0.3s ease-in-out;
 }
-.navbar .logo:hover, .navbar footer .insta:hover, footer .navbar .insta:hover,
-.navbar footer .tiktok:hover,
-footer .navbar .tiktok:hover,
-.navbar footer .wpp:hover,
-footer .navbar .wpp:hover,
-.navbar footer .yt:hover,
-footer .navbar .yt:hover, .navbar .nav-item:hover {
+.navbar .logo:hover, .navbar .nav-item:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
@@ -63,13 +51,7 @@ footer .navbar .yt:hover, .navbar .nav-item:hover {
 .navbar .nav-link {
   color: white;
 }
-.navbar .logo, .navbar footer .insta, footer .navbar .insta,
-.navbar footer .tiktok,
-footer .navbar .tiktok,
-.navbar footer .wpp,
-footer .navbar .wpp,
-.navbar footer .yt,
-footer .navbar .yt, .navbar .nav-item {
+.navbar .logo, .navbar .nav-item {
   height: 40px;
 }
 .botones {
@@ -88,6 +70,20 @@ p {
   color: white;
   font-size: 20px;
   letter-spacing: 5px;
+}
+
+footer .insta,
+footer .tiktok,
+footer .wpp,
+footer .yt {
+  transition: transform 0.3s ease-in-out;
+}
+footer .insta:hover,
+footer .tiktok:hover,
+footer .wpp:hover,
+footer .yt:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .Banner {
