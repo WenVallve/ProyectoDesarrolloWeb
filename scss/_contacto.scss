@@ -1,0 +1,44 @@
+@import 'mixins';
+
+
+
+.formulario{
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    height: 550px;
+    align-items: center;
+    #exampleFormControlInput1{
+        width: 600px;
+        @include mobile {
+            width: 200px;
+        }
+    }
+    #exampleFormControlInput2{
+        width: 600px;
+        @include mobile {
+            width: 200px;
+        }
+    }
+    #exampleFormControlTextarea1{
+        width: 700px;
+        @include mobile {
+            width: 300px;
+        }
+    }
+    .enviar{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .btn-btn-light{
+        width:160px;
+        height: 60px;
+        font-size: 20px;
+        text-transform: uppercase;
+        &:active {
+            background-color:#23241E;
+            color:white;
+        }
+    }
+}

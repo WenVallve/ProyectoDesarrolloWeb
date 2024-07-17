@@ -1,0 +1,86 @@
+@import 'variables';
+
+.grid-container{
+    display:grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 350px 350px;
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 
+    "zona1 zona2 zona3"
+    "zona4 zona5 zona6";
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        height: unset;
+      }
+    .grid-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    .album{
+        display:flex;
+        height: 190px;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+          }
+    }
+    .dalbum{
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+
+.grid-item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    column-gap: 40px;
+}
+
+#imagen1{
+    grid-area: zona1;
+}
+#imagen2{
+    grid-area: zona2;
+}
+#imagen3{
+    grid-area: zona3;
+}
+#imagen4{
+    grid-area: zona4;
+}
+#imagen5{
+    grid-area: zona5;
+}
+#imagen6{
+    grid-area: zona6;
+}
+
+.vermas{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    .boton{ 
+        display:flex;
+        height: 40px;
+        width: 150px;
+        font-size: 15px;
+        justify-content: center;
+        background-color: aliceblue;
+        font-family:$font-primary;
+    }
+}

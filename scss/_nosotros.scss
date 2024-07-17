@@ -1,0 +1,87 @@
+@import 'mixins';
+
+
+.contenedorgrid{
+    display:grid;
+    grid-template-columns: 550px 550px;
+    grid-template-rows: 500px 500px;
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 
+    "nosotros1 nosotros2"
+    "nosotros3 nosotros4";
+    
+
+    @include mobile { 
+        display: flex;
+        flex-direction: column;
+        height: unset;
+        padding-top: 10px;
+    }
+    .grid-item2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        column-gap: 40px;
+        
+        
+        .textonosotros{
+            display:flex;
+            font-size: 20px;
+            text-align: center;
+            padding-left: 55px;
+            padding-right: 55px;
+
+        }
+        .imagenpresentacion{
+            display:flex;
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+              }
+
+    }
+}
+}
+
+
+
+
+#imagen1{
+    grid-area: zona1;
+}
+#imagen2{
+    grid-area: zona2;
+}
+#imagen3{
+    grid-area: zona3;
+}
+#imagen4{
+    grid-area: zona4;
+}
+#imagen5{
+    grid-area: zona5;
+}
+#imagen6{
+    grid-area: zona6;
+}
+
+#sobrenosotros1{
+    grid-area: nosotros1;
+}
+#sobrenosotros2{
+    grid-area: nosotros2;
+}
+#sobrenosotros3{
+    grid-area: nosotros3;
+}
+#sobrenosotros4{
+    grid-area: nosotros4;
+}
